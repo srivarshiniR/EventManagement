@@ -1,79 +1,98 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Event Management App
 
-# Getting Started
+## Overview
+The Event Management App is a cross-platform mobile application built using React Native. This app enables users to browse, create, and manage events efficiently. The focus is on providing a seamless user experience with high performance, intuitive navigation, and scalable architecture.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## Features
+- **Browse Events**: Users can view upcoming, ongoing, and past events.
+- **Search and Filter**: Search events by title and location.
+- **Create Events**: Organizers can create new events with relevant details like title, date, location and description.
+- **Event Details**: View detailed information about an event, including the organizer’s contact.
+- **Pagination**: Efficient loading of events with paginated data.
+- **Theme**: Maintained theme structure for fonts
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Prerequisites
+1. **Node.js**: Version 14 or higher.
+2. **React Native CLI**: Install globally using:
+   
+bash
+   npm install -g react-native-cli
 
-```bash
-# using npm
-npm start
+3. **Android Studio**: For Android emulator setup.
+4. **Xcode**: For iOS emulator (macOS only).
+5. **Dependencies**: Ensure the following are installed:
+   - React Navigation
 
-# OR using Yarn
-yarn start
-```
+---
 
-## Step 2: Start your Application
+## Installation
+1. Install dependencies:
+   
+bash
+   npm install
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+---
 
-```bash
-# using npm
-npm run android
+## Running the Application
+1. **Start the Metro Bundler**:
+   
+bash
+   npm start
 
-# OR using Yarn
-yarn android
-```
+2. **Run on Android Emulator**:
+   
+bash
+   npm run android
 
-### For iOS
+3. **Run on iOS Emulator** (macOS only):
+   
+bash
+   npm run ios
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Folder Structure
+.
+|___src
+   ├── screens/           # Application screens (e.g., Home, EventDetails, CreateEvent)
+   ├── services/          # Mock data 
+   ├── navigation/        # React Navigation setup
+   ├── redux/             # State Management
+   ├── theme/             # Reusable fonts
+ 
+├── App.js             # Entry point of the app
+├── package.json       # Dependencies and scripts
+└── README.md          # Documentation
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+---
 
-Now that you have successfully run the app, let's modify it.
+## Architecture
+### Thought Process
+1. **Modular Design**: Components and screens are separated for reusability and maintainability.
+2. **State Management**: Lightweight state managed locally within components.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Key Decisions
+- **React Navigation** for navigation to ensure a smooth user experience.
+- **Axios** for API calls due to its simplicity and robust error handling.
+- **Mock Data**: Used for development and testing purposes.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+---
 
-## Congratulations! :tada:
+## Areas for Improvement
+1. **Backend Integration**: Replace mock data with a real backend API.
+2. **Enhanced Search**: Add filtering by categories, dates, and attendees.
+3. **Authentication**: Implement user authentication for personalized experiences.
+4. **Offline Mode**: Add offline support with local data caching.
+5. **Testing**: Add unit tests for components and API integration.
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Contact
+For queries or feedback, reach out to [srivarshinirr@gmail.com](mailto:srivarshinirr@gmail.com).
